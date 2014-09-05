@@ -1,0 +1,18 @@
+class Singleton
+{
+    private static Singleton instance; //static var,global using
+    
+    private Singleton
+    {
+      // private constructed function
+    }
+    
+    publick static Singleton GetInstance //public instance to control static var instance visit
+    {
+      if(instance == NULL)
+      {
+        instance = new Singleton();
+      }
+      return instance;
+    }
+}

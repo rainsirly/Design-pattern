@@ -1,4 +1,4 @@
 Design-pattern
 ==============
 
-my code about DP in C++
+Learning code about DP 

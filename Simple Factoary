@@ -1,0 +1,69 @@
+public class Operation
+{
+	private float _numberA = 0;
+	private float _numberB = 0;
+	
+	public setNumberA(float value)
+	{
+		_numberA = value;
+	}
+	public getNumberA()
+	{
+		return _numberA;
+	}
+	public setNumberB(float value)
+	{
+		_numberB = value;
+	}
+	public getNumberB()
+	{
+		return _numberB;
+	}
+	public virtual double getResult()
+	{
+		double result = 0;
+		return result;
+	}
+}
+
+public class OperationAdd : Operation
+{
+	public double getResult()
+	{
+		double result = 0;
+		result = _numberA + _numberB;
+		return result;
+	}
+}
+
+public class OperationSub : operation
+{
+//...
+}
+
+public class OperationSub: operation
+{
+//...
+}
+
+public class OperationFactoary
+{
+	public static Operation createOperation(string operate)
+	{
+		Operation oper = NULL;
+		switch(oper)
+		{
+			case"+":
+				oper = new OperationAdd();
+				break;
+			case"-":
+				oper = new OperationSub();
+				break;
+			case"*":
+				oper = new OperationMul();
+				break;
+			//....
+		}
+		return oper;
+	}
+}

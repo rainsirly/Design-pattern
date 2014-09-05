@@ -41,7 +41,7 @@ public class OperationSub : operation
 //...
 }
 
-public class OperationSub: operation
+public class OperationMul: operation
 {
 //...
 }
